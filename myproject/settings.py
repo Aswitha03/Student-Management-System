@@ -31,7 +31,7 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 DEBUG = os.getenv("DEBUG", "False") == "True"
 
 ALLOWED_HOSTS = [
-    "://onrender.com"
+    "student-management-system-8car.onrender.com",
     "127.0.0.1",
     "localhost",
 ]
@@ -177,4 +177,8 @@ CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:5500",
     "http://localhost:5500",
     "http://127.0.0.1:8000",
+]
+
+CORS_TRUSTED_ORIGINS = [
+    "http://student-management-system-8car.onrender.com",
 ]
